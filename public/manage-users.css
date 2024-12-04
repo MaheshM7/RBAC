@@ -1,0 +1,85 @@
+/* Button for Status: Activate/Deactivate */
+.btn-status {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+/* Activate Button (Light Pink) */
+.btn-activate {
+  background-color: #db2777; /* Light Pink */
+  color: white;
+}
+
+.btn-activate:hover {
+  background-color: #c61b6f; /* Darker Pink */
+}
+
+/* Deactivate Button (Dark Pink) */
+.btn-deactivate {
+  background-color: #9b1c59; /* Dark Pink */
+  color: white;
+}
+
+.btn-deactivate:hover {
+  background-color: #7b1041; /* Darker Pink */
+}
+
+/* Delete Button (Light Red) */
+.btn-delete {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  background-color: #f8d7da; /* Light Red */
+  color: #721c24; /* Dark Red Text */
+  transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+  background-color: #f5c6cb; /* Slightly darker light red */
+}
+
+/* Edit Button (Light Pink) */
+.btn-warning {
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  cursor: pointer;
+  background-color: #db2777; /* Light Pink */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+  background-color: #c61b6f; /* Darker Pink */
+}
+
+/* Action Buttons Container */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  /* Responsive Styling for Smaller Devices */
+  .btn-status,
+  .btn-delete,
+  .btn-warning {
+    width: 100%;
+    padding: 8px 16px;
+  }
+
+  .action-buttons {
+    flex-direction: row;
+    gap: 5px;
+  }
+}

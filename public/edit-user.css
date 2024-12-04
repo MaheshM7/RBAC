@@ -1,0 +1,112 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin-left: 375px;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+
+/* Container for the Form */
+.container {
+  width: 90%; /* Take up 90% of the screen width */
+  max-width: 600px; /* Limit it to 600px max */
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Form Styling */
+.edit-user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input Field Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Update Button Styling (Light Pink) */
+.btn-submit {
+  padding: 16px 24px;
+  background-color: #db2777; /* Light Pink */
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+  background-color: #c61b6f; /* Darker Pink on hover */
+}
+
+/* Delete Button Styling (Dark Pink) */
+.btn-delete {
+  padding: 16px 24px;
+  background-color: #9b1c59; /* Dark Pink */
+  margin-top:20px;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+  background-color: #7b1041; /* Darker Pink on hover */
+}
+
+/* Button Container (Align Buttons Side by Side) */
+.btn-submit-container {
+  display: flex;
+  justify-content: space-between; /* Align buttons side by side */
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  /* Responsive Design for smaller devices */
+  .btn-submit,
+  .btn-delete {
+    width: auto; /* Allow buttons to shrink to fit content */
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .btn-submit-container {
+    flex-direction: row; /* Ensure buttons stay side by side on smaller screens */
+    gap: 15px; /* Maintain gap between buttons */
+  }
+}
